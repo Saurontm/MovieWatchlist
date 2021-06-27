@@ -1,6 +1,7 @@
 import { Table } from "react-bootstrap";
 import movieStore from "../stores/movieStore";
 import MovieEntry from "./MovieEntry";
+import { observer } from "mobx-react-lite";
 
 const MovieTable = (props) => {
   const MovieList = movieStore.movies
@@ -18,4 +19,4 @@ const MovieTable = (props) => {
   );
 };
 
-export default MovieTable;
+export default observer(MovieTable);

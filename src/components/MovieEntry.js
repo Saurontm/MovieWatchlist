@@ -1,22 +1,19 @@
 import { Name } from "../styles";
-import { Button } from "react-bootstrap";
+import MovieStatusButton from "./MovieStatusButton";
+import { observer } from "mobx-react-lite";
 
 const MovieEntry = (props) => {
   return (
     <tr>
       <td>
         <Name> {props.movie.name}</Name>
-        <Button variant="primary" className="float-right">
-          Watched
-        </Button>
-        <Button variant="danger" className="float-right">
+        <MovieStatusButton movie={props.movie}></MovieStatusButton>
+        {/* <Button variant="danger" className="float-right">
           Delete
-        </Button>
+        </Button> */}
       </td>
-      {/* <Button variant="primary">Watched</Button> */}
-      {/* <Button variant="danger">Delete</Button> */}
     </tr>
   );
 };
 
-export default MovieEntry;
+export default observer(MovieEntry);

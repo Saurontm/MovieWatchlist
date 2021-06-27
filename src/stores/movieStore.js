@@ -8,9 +8,12 @@ class MovieStore {
     makeAutoObservable(this);
   }
 
-  //function to add movie
-
   //function to make movie watched/ unwatched
+  updateWatchStatus = (Updatedmovie) => {
+    const movie = this.movies.find((movie) => movie.id === Updatedmovie.id);
+    movie.watched = !movie.watched;
+  };
+  //function to add movie
 }
 
 const movieStore = new MovieStore();

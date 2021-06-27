@@ -1,5 +1,6 @@
 import MovieTable from "./MovieTable";
 import { Title } from "../styles";
+import { observer } from "mobx-react-lite";
 
 const WatchedMovies = () => {
   return (
@@ -10,4 +11,4 @@ const WatchedMovies = () => {
   );
 };
 
-export default WatchedMovies;
+export default observer(WatchedMovies);
