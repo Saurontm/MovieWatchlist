@@ -18,7 +18,7 @@ const AddMovieInput = () => {
     <Form onSubmit={handleAdd} style={{ marginTop: 40, marginBottom: 40 }}>
       <InputGroup className="mb-3">
         <FormControl
-          placeholder="Movie"
+          placeholder="Add new movie"
           aria-label="Movie"
           aria-describedby="basic-addon2"
           onChange={handleChange}

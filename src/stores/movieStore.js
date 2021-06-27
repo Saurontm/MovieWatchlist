@@ -22,20 +22,19 @@ class MovieStore {
 
   //function to add movie
   addMovie = (newMovieName) => {
-    console.log(newMovieName);
     this.movies.push({
       name: newMovieName,
       id: this.movies.length + 1,
       watched: false,
+      rating: 0,
     });
-    console.log(this.movies);
   };
 
-  // {
-  //   id: 3,
-  //   name: "The Return of The King",
-  //   watched: false,
-  // },
+  //change rating
+  changeRating = (movieID, rating) => {
+    const movie = this.movies.find((movie) => movie.id === movieID);
+    movie.rating = rating;
+  };
 }
 
 const movieStore = new MovieStore();
