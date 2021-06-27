@@ -1,6 +1,7 @@
 import "./App.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles";
+import WatchedList from "./components/Watchlist";
 import WatchedMovies from "./components/WatchedMovies";
 
 const theme = {
@@ -13,6 +14,7 @@ function App() {
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <WatchedList></WatchedList>
         <WatchedMovies></WatchedMovies>
       </ThemeProvider>
     </div>

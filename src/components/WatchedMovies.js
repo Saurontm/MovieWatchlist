@@ -4,8 +4,8 @@ import { Title } from "../styles";
 const WatchedMovies = () => {
   return (
     <div>
-      <Title>Watchlist</Title>
-      <MovieTable></MovieTable>
+      <Title>Watched</Title>
+      <MovieTable watched={true}></MovieTable>
     </div>
   );
 };

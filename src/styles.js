@@ -7,10 +7,10 @@ body{
 `;
 
 export const Title = styled.h1`
-  color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.secondaryColor};
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  margin-top: 30px;
+  margin: 20px;
 `;
 
 export const Name = styled.span`
