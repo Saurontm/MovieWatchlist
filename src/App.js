@@ -1,20 +1,19 @@
 import "./App.css";
-import HomePage from "./components/Home";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles";
+import WatchedMovies from "./components/WatchedMovies";
 
 const theme = {
   mainColor: "white",
-  backgroundColor: "#2A2D3E",
-  secondaryColor: "#DEDEDE",
-  lightColor: "#5E5E5E",
+  backgroundColor: "#171818",
+  secondaryColor: "#797979",
 };
 function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <HomePage></HomePage>
+        <WatchedMovies></WatchedMovies>
       </ThemeProvider>
     </div>
   );
