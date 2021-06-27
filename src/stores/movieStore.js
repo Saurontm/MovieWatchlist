@@ -8,6 +8,12 @@ class MovieStore {
     makeAutoObservable(this);
   }
 
+  //function to delete
+  movieDelete = (movieID) => {
+    const updatedMovies = this.movies.filter((movie) => movie.id !== movieID);
+    this.movies = updatedMovies;
+  };
+
   //function to make movie watched/ unwatched
   updateWatchStatus = (Updatedmovie) => {
     const movie = this.movies.find((movie) => movie.id === Updatedmovie.id);
