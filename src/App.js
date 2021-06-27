@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles";
 import WatchedList from "./components/Watchlist";
 import WatchedMovies from "./components/WatchedMovies";
+import AddMovieInput from "./components/AddMovieInput";
 
 const theme = {
   mainColor: "white",
@@ -14,6 +15,7 @@ function App() {
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <AddMovieInput />
         <WatchedList></WatchedList>
         <WatchedMovies></WatchedMovies>
       </ThemeProvider>
