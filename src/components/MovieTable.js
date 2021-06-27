@@ -20,12 +20,20 @@ const MovieTable = (props) => {
   return (
     <div>
       <Title>
-        {props.watched ? "Watched" : "Watchlist"}{" "}
+        {props.watched ? "Watched" : "Watchlist"}
         <Badge bg="warning">{allMovies.length}</Badge>
       </Title>
-      <Table striped bordered hover variant="dark">
+      <Table
+        striped
+        bordered
+        hover
+        variant="dark"
+        style={{ marginTop: 40, marginBottom: 40 }}
+      >
         <thead>
-          <SearchBar setQuery={setQuery} />
+          <tr>
+            <SearchBar setQuery={setQuery} />
+          </tr>
         </thead>
         <tbody>{movieList}</tbody>
       </Table>

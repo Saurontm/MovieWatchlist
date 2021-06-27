@@ -15,7 +15,7 @@ const AddMovieInput = () => {
     movieStore.addMovie(movieName);
   };
   return (
-    <Form onSubmit={handleAdd}>
+    <Form onSubmit={handleAdd} style={{ marginTop: 40, marginBottom: 40 }}>
       <InputGroup className="mb-3">
         <FormControl
           placeholder="Movie"

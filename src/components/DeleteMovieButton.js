@@ -6,7 +6,17 @@ const DeleteMovieButton = (props) => {
     movieStore.movieDelete(props.movieID);
   };
   return (
-    <Button variant="danger" className="float-right" onClick={handleDelete}>
+    <Button
+      variant="danger"
+      className="float-right"
+      onClick={handleDelete}
+      style={{
+        float: "right",
+        marginRight: 20,
+        backgroundColor: "#6200EE",
+        borderColor: "#6200EE",
+      }}
+    >
       Delete
     </Button>
   );

@@ -15,9 +15,11 @@ function App() {
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <AddMovieInput />
-        <WatchedList></WatchedList>
-        <WatchedMovies></WatchedMovies>
+        <div class="container">
+          <AddMovieInput />
+          <WatchedList></WatchedList>
+          <WatchedMovies></WatchedMovies>
+        </div>
       </ThemeProvider>
     </div>
   );

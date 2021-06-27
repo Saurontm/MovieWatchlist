@@ -6,7 +6,18 @@ const MovieStatusButton = (props) => {
     movieStore.updateWatchStatus(props.movie);
   };
   return (
-    <Button variant="primary" className="float-right" onClick={handleUpdate}>
+    <Button
+      variant="primary"
+      className="float-right"
+      onClick={handleUpdate}
+      style={{
+        float: "right",
+        marginRight: 10,
+        color: "black",
+        backgroundColor: "#03DAC6",
+        borderColor: "#03DAC6",
+      }}
+    >
       {props.movie.watched ? "Unwatch" : "Watch"}
     </Button>
   );
