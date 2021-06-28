@@ -11,9 +11,6 @@ export const Title = styled.h1`
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   ${"" /* margin: 20px; */}
-  &.title {
-    margintop: 20;
-  }
 `;
 
 export const Name = styled.span`

@@ -13,6 +13,7 @@ const AddMovieInput = () => {
     event.preventDefault();
     console.log(movieName);
     movieStore.addMovie(movieName);
+    event.target.reset();
   };
   return (
     <Form onSubmit={handleAdd} style={{ marginTop: 40, marginBottom: 40 }}>
