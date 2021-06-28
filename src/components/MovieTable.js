@@ -20,8 +20,13 @@ const MovieTable = (props) => {
   return (
     <div>
       <Title>
-        {props.watched ? "Watched" : "Watchlist"}
-        <Badge bg="warning">{allMovies.length}</Badge>
+        {props.watched ? "Watched  " : "Watchlist  "}
+        <Badge
+          className="bg-secondary"
+          style={{ fontSize: 20, float: "right" }}
+        >
+          {allMovies.length}
+        </Badge>
       </Title>
       <Table
         striped

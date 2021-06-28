@@ -11,11 +11,17 @@ export const Title = styled.h1`
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   ${"" /* margin: 20px; */}
+  &.title {
+    margintop: 20;
+  }
 `;
 
 export const Name = styled.span`
   color: ${(props) => props.theme.mainColor};
-  margin-right: 20px;
+  margin-right: 30px;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 120%;
 `;
 
 export const SearchBarStyled = styled.input`

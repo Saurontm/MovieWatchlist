@@ -13,7 +13,7 @@ const StarRating = (props) => {
   };
 
   return (
-    <div>
+    <div style={{ float: "right", marginRight: 30 }}>
       <Rating
         onClick={handleRating}
         ratingValue={rating}
