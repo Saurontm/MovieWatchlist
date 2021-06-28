@@ -3,7 +3,7 @@ import Rating from "react-simple-star-rating";
 import movieStore from "../stores/movieStore";
 
 const StarRating = (props) => {
-  const [rating, setRating] = useState(0); // initial rating value
+  const [rating, setRating] = useState(props.movie.rating); // initial rating value
 
   // Catch Rating value
   const handleRating = (rate) => {
@@ -19,7 +19,7 @@ const StarRating = (props) => {
         ratingValue={rating}
         size={20}
         transition
-        fillColor="orange"
+        fillColor="#FFD528"
         emptyColor="gray"
       />
     </div>

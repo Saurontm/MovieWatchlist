@@ -18,6 +18,7 @@ class MovieStore {
   updateWatchStatus = (Updatedmovie) => {
     const movie = this.movies.find((movie) => movie.id === Updatedmovie.id);
     movie.watched = !movie.watched;
+    if (!movie.watched) movie.rating = 0;
   };
 
   //function to add movie
